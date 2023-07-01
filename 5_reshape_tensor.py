@@ -62,8 +62,10 @@ print(f"new shape: {x_unsqueezed.shape}")
 x_original = torch.rand(size = (224, 224, 3)) # height, width, color channels
 # print(x_original)
 x_permuted = x_original.permute(2, 0, 1) # shifts axis. 0 -> 1, 1 -> 2, 2 -> 0
-print(x_original.shape)
-print(x_permuted.shape)
+print(x_original.shape) # [224, 224, 3]
+print(x_permuted.shape) # [3, 224, 224]
+
+
 
 
 
